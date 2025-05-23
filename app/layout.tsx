@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import TopHeader from "@/app/components/layout/TopHeader";
+import Header from "@/app/components/layout/Header";
+import Categories from "@/app/components/layout/Categories";
 
 const epilogue = localFont({
   src: [
@@ -45,7 +48,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${epilogue.variable} antialiased`}>{children}</body>
+      <body className={`${epilogue.variable} antialiased`}>
+        <div className="max-w-[1920px] w-full mx-auto pb-[16px]">
+          <TopHeader />
+          <Header />
+          <Categories />
+        </div>
+        <div className="bg-grey_200 max-w-[1920px] px-[240px]">{children}</div>
+      </body>
     </html>
   );
 }
