@@ -11,7 +11,13 @@ import returnIcon from "./return.svg";
 import delivery from "./delivery.svg";
 import freeShip from "./free_ship.svg";
 import support from "./support.svg";
-
+import arrowRight from "./arrow-right.svg";
+import fire from "./fire.svg";
+import arrowLeft from "./arrow-left.svg";
+import check from "./check.svg";
+import endIcon from "./end-icon.svg";
+import filter from "./filter.svg";
+import arrowUp from "./arrow-up.svg";
 const svgs = {
   sale,
   phoneRounded,
@@ -26,6 +32,13 @@ const svgs = {
   delivery,
   freeShip,
   support,
+  arrowRight,
+  fire,
+  arrowLeft,
+  check,
+  endIcon,
+  filter,
+  arrowUp,
 };
 
 export default svgs;

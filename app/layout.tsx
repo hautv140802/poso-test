@@ -54,7 +54,9 @@ export default function RootLayout({
           <Header />
           <Categories />
         </div>
-        <div className="bg-grey_200 max-w-[1920px] px-[240px]">{children}</div>
+        <div className="bg-grey_200 max-w-[1920px] px-[240px] pt-[24px] w-full mx-auto">
+          {children}
+        </div>
       </body>
     </html>
   );
