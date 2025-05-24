@@ -7,15 +7,15 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div
-      className="relative max-w-[1920px] w-full mx-auto px-[240px] h-[463.67px]"
+      className="relative max-w-[1920px] w-full mx-auto px-[240px] 3xl:h-[463.67px]"
       style={{
         backgroundImage: `url(${images.footer.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="w-full py-[96px] flex justify-between">
-        <div className="flex flex-col gap-[32px]">
+      <div className="w-full py-[24px] 3xl:py-[96px] flex justify-between">
+        <div className="hidden flex-col gap-[32px] 3xl:flex">
           <h1 className="text-[20px] leading-[24px] font-semibold text-brand_800">
             Viet Hung Auto Production Trading Joint Stock Company
           </h1>
@@ -129,7 +129,29 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+      <div className="flex flex-col gap-[32px] 3xl:hidden">
+        <h1 className="text-[20px] leading-[24px] font-semibold text-brand_800">
+          Viet Hung Auto Production Trading Joint Stock Company
+        </h1>
+        <div className="flex flex-col gap-[4px]">
+          <FooterItem label="Tax code: " title="0305094228" />
+          <FooterItem
+            label="Address: "
+            title="13 Nghia Thuc, Ward 05, District 5, Ho Chi Minh City, Viet Nam."
+          />
+          <FooterItem label="Phone number: " title="0283 760 7607" />
+          <FooterItem
+            label="Opening hour: "
+            title="9:00 - 22:00 from Mon - Fri"
+          />
+        </div>
+        <Image
+          src={images.boCongThuong}
+          width={200}
+          height={75.67}
+          alt="bo cong thuong"
+        />
+      </div>
       <ScrollTop />
     </div>
   );

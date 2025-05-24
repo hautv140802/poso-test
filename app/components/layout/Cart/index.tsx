@@ -10,7 +10,7 @@ const Cart = () => {
     <Popover
       content={<ListCartProduct />}
       title={
-        <p className="text-[20px] font-semibold leading-[24px] text-text_primary">
+        <p className="text-[20px] font-semibold leading-[24px] text-text_primary ">
           Giỏ hàng
         </p>
       }
@@ -33,11 +33,9 @@ const Cart = () => {
           </div>
         </div>
 
-        <span className="font-medium text-[16px] leading-[16px] text-text_primary text-nowrap">
+        <span className="font-medium text-[16px] leading-[16px] text-text_primary text-nowrap hidden 3xl:block">
           Giỏ hàng
         </span>
-
-        <Popover></Popover>
       </div>
     </Popover>
   );

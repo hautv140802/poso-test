@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     border-bottom-left-radius: 12px;
     overflow: hidden;
     .ant-popover-inner {
-      padding: 0;
+      padding: 4px;
     }
   }
 }
@@ -33,7 +33,7 @@ const MenuCategories = () => {
         placement="bottomLeft"
         arrow={false}
         align={{
-          offset: [0, 20],
+          offset: [0, 25],
         }}
         rootClassName="menu-categories"
       >

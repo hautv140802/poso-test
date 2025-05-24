@@ -24,10 +24,10 @@ const ProductCard = (props: IProductCardProps) => {
     image,
   } = props;
   const variantSize = {
-    Banner: "w-[252.8px] h-[495.8px]",
-    List: "w-[261.25px] h-[504.25px]",
-    Cart: "w-[214px] h-[457px]",
-    Category: "w-[200px] h-[354px]",
+    Banner: "w-[225px] h-[365px] 3xl:w-[252.8px] 3xl:h-[495.8px]",
+    List: "w-[225px] h-[365px] 3xl:w-[261.25px] 3xl:h-[504.25px]",
+    Cart: "w-[212px] h-[365px] 3xl:w-[214px] 3xl:h-[457px]",
+    Category: "w-[225px] h-[280px] 3xl:w-[200px] 3xl:h-[354px]",
   };
 
   const variantImage: Record<
@@ -41,23 +41,26 @@ const ProductCard = (props: IProductCardProps) => {
     Category: {
       height: 184,
       width: 184,
-      class: "inline-block w-[184px] h-[184px] object-cover",
+      class:
+        "inline-block w-[160px] h-[120px] 3xl:w-[184px] 3xl:h-[184px] object-cover",
     },
 
     Banner: {
       height: 236.8,
       width: 236.8,
-      class: "inline-block w-[236.8px] h-[236.8px]",
+      class:
+        "inline-block w-[160px] h-[120px] 3xl:w-[236.8px] 3xl:h-[236.8px] ",
     },
     List: {
       height: 245.25,
       width: 245.25,
-      class: "inline-block w-[245.25px] h-[245.25px]",
+      class:
+        "inline-block w-[160px] h-[120px] 3xl:w-[245.25px] 3xl:h-[245.25px]",
     },
     Cart: {
       height: 198,
       width: 198,
-      class: "inline-block w-[198px] h-[198px]",
+      class: "inline-block w-[160px] h-[120px] 3xl:w-[198px] 3xl:h-[198px]",
     },
   };
   return (
@@ -67,7 +70,7 @@ const ProductCard = (props: IProductCardProps) => {
         variantSize[type]
       )}
     >
-      <div className="p-[8px]">
+      <div className="p-[4px] 3xl:p-[8px] flex justify-center items-center">
         <Image
           src={image}
           width={variantImage[type]?.width || 0}
@@ -75,14 +78,16 @@ const ProductCard = (props: IProductCardProps) => {
           alt="product"
           className={clsx(
             variantImage[type]?.class || "",
-            "rounded-[8px] object-contain"
+            "rounded-[8px] object-contain mx-auto"
           )}
         />
       </div>
 
       <div
         className={clsx(
-          type !== "Category" ? "p-[16px_24px_24px]" : "p-[16px_24px_0]"
+          type !== "Category"
+            ? "p-[8px_12px_12px] 3xl:p-[16px_24px_24px]"
+            : "p-[8px_12px_0] 3xl:p-[16px_24px_0]"
         )}
       >
         {type !== "Category" && (

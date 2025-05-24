@@ -36,7 +36,7 @@ const menuRightTop = [
 
 const RightTopMenuCategories = () => {
   return (
-    <div className="flex flex-wrap gap-[16px] pb-[28px] border-b-[1px] border-solid border-[calc(rgba(145, 158, 171, 0.24))]">
+    <div className="grid grid-cols-2 3xl:grid-cols-3 gap-[16px] pb-[28px] border-b-[1px] border-solid border-[calc(rgba(145, 158, 171, 0.24))]">
       {menuRightTop.map((item, index) => (
         <div
           key={index}

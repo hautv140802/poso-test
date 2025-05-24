@@ -28,7 +28,7 @@ const Categories = () => {
       <div className="flex items-center gap-[24px]">
         <MenuCategories />
 
-        <ul className="flex items-center gap-[20px]">
+        <ul className="3xl:flex items-center gap-[20px] hidden">
           {menuItems.map((item, index) => (
             <li
               key={index}
@@ -40,17 +40,29 @@ const Categories = () => {
         </ul>
       </div>
 
-      <ul className="flex items-center gap-[20px]">
-        {menuPromotions.map((item, index) => (
-          <li
-            key={index}
-            className="flex font-semibold text-[16px] gap-[8px] items-center leading-[24px] text-text_primary"
-          >
-            <Image src={item.icon} width={24} height={24} alt="icon" />
-            {item.title}
-          </li>
-        ))}
-      </ul>
+      <div className="flex flex-col gap-[12px] justify-end items-end">
+        <ul className="3xl:hidden items-center gap-[20px] flex">
+          {menuItems.map((item, index) => (
+            <li
+              key={index}
+              className="font-medium text-[16px] leading-[24px] text-text_primary"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+        <ul className="flex items-center gap-[20px]">
+          {menuPromotions.map((item, index) => (
+            <li
+              key={index}
+              className="flex font-semibold text-[16px] gap-[8px] items-center leading-[24px] text-text_primary"
+            >
+              <Image src={item.icon} width={24} height={24} alt="icon" />
+              {item.title}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

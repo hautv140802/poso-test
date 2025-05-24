@@ -25,7 +25,7 @@ const dataPromotions = [
 ];
 const Promotions = () => {
   return (
-    <div className="w-full py-[40px] mt-[32px] flex items-center gap-[32px]">
+    <div className="w-full py-[40px] mt-[32px] flex items-center gap-[16px] 3xl:gap-[32px]">
       {dataPromotions.map((item, index) => (
         <PromotionCard key={index} {...item} />
       ))}

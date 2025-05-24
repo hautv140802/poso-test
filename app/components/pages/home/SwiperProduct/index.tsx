@@ -59,7 +59,7 @@ export const products = [
 
 const SwiperProduct = () => {
   return (
-    <div className="relative bg-brand_500 rounded-b-[12px] w-full h-[591.8px] p-[48px]">
+    <div className="relative bg-brand_500 rounded-b-[12px] w-full h-[450px] 3xl:h-[591.8px] p-[48px]">
       <div className="cursor-pointer absolute w-[40px] flex justify-center items-center h-[40px] rounded-full bg-brand_100 swiper-button-prev !left-[30px] top-[50%] z-10 text-black">
         <Image src={svgs.arrowLeft} width={24} height={24} alt="arrow left" />
       </div>

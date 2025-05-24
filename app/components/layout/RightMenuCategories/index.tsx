@@ -65,8 +65,13 @@ const RightMenuCategories = () => {
         </div>
       </div>
 
-      <div className="flex gap-[16px]">
+      <div className="hidden 3xl:grid grid-cols-5 gap-[16px]">
         {products.map((item, index) => (
+          <ProductCard key={index} {...item} type="Category" />
+        ))}
+      </div>
+      <div className="grid 3xl:hidden grid-cols-3 gap-[16px]">
+        {products.slice(0, 3).map((item, index) => (
           <ProductCard key={index} {...item} type="Category" />
         ))}
       </div>

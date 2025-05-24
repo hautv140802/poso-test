@@ -4,7 +4,7 @@ import RightTopMenuCategories from "@/app/components/layout/RightTopMenuCategori
 
 const ListMenuProduct = () => {
   return (
-    <div className="w-[1381.7px] h-[724px] flex gap-[24px] bg-grey_200">
+    <div className="w-[1000px] 3xl:w-[1381.7px] h-fit 3xl:h-[724px] flex gap-[24px] bg-grey_200">
       <LeftMenuCategories />
       <div className="py-[24px] pr-[24px]">
         <RightTopMenuCategories />
