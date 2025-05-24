@@ -24,6 +24,7 @@ const config: Config = {
         text_secondary: "#637381",
         brand_600: "#025FCA",
         brand_800: "#013065",
+        brand_700: "#024897",
       },
       backgroundImage: {
         "custom-gradient":

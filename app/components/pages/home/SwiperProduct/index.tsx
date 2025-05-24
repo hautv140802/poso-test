@@ -10,6 +10,53 @@ import { FreeMode, Navigation } from "swiper/modules";
 import Image from "next/image";
 import svgs from "@/app/assets/svgs";
 import clsx from "clsx";
+import images from "@/app/assets/images";
+
+export const products = [
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product1,
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product2,
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product3,
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product4,
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product5,
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product6,
+  },
+];
+
 const SwiperProduct = () => {
   return (
     <div className="relative bg-brand_500 rounded-b-[12px] w-full h-[591.8px] p-[48px]">
@@ -36,14 +83,12 @@ const SwiperProduct = () => {
         modules={[Navigation, FreeMode]}
         freeMode={true}
       >
-        {Array.from({
-          length: 10,
-        }).map((_, index) => (
+        {products.map((item, index) => (
           <SwiperSlide
             key={index}
             className={clsx("!w-fit", index < 10 ? "mr-[20px]" : "mr-[5px]")}
           >
-            <ProductCard />
+            <ProductCard type="Banner" {...item} />
           </SwiperSlide>
         ))}
       </Swiper>

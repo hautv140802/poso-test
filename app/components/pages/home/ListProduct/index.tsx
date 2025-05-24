@@ -1,5 +1,6 @@
 "use client";
 
+import images from "@/app/assets/images";
 import ButtonComponent from "@/app/components/common/Button";
 import ProductCard from "@/app/components/common/ProductCard";
 import MenuFilter from "@/app/components/pages/home/MenuFilter";
@@ -7,7 +8,152 @@ import PriceSort from "@/app/components/pages/home/PriceSort";
 import { useState } from "react";
 
 const menuQuickFilters = ["Liên quan", "Bán chạy", "Mới nhất", "Nổi bật"];
-
+const products = [
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product2,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product6,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product1,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product5,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product2,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product6,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product1,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product5,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product2,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product6,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product1,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product5,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product2,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product6,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product1,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+  {
+    name: "Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)",
+    price: 299000,
+    originalPrice: 329000,
+    discount: "-10%",
+    image: images.product5,
+    tag: "Bán chạy",
+    buttonLabel: "Mua ngay",
+  },
+];
 const ListProduct = () => {
   const [selectedQuickFilter, setSelectedQuickFilter] = useState("Liên quan");
   return (
@@ -37,8 +183,8 @@ const ListProduct = () => {
           </div>
         </div>
         <div className="flex flex-wrap gap-[20px] w-full">
-          {Array.from({ length: 12 }).map((_, index) => (
-            <ProductCard key={index} type="List" />
+          {products.map((item, index) => (
+            <ProductCard key={index} type="List" {...item} />
           ))}
         </div>
       </div>

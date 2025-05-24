@@ -1,4 +1,5 @@
 import svgs from "@/app/assets/svgs";
+import MenuCategories from "@/app/components/layout/MenuCategories";
 import Image from "next/image";
 
 const Categories = () => {
@@ -25,11 +26,7 @@ const Categories = () => {
   return (
     <div className="px-[240px] mt-[24px] flex items-center justify-between gap-[24px]">
       <div className="flex items-center gap-[24px]">
-        <button className="flex items-center gap-[8px] p-[12px_16px] bg-[#0155C6] rounded-[8px] text-white font-bold text-[16px]">
-          <Image src={svgs.menu} width={18} height={18} alt="menu" />
-          Danh mục sản phẩm
-          <Image src={svgs.chevronDown} width={18} height={18} alt="menu" />
-        </button>
+        <MenuCategories />
 
         <ul className="flex items-center gap-[20px]">
           {menuItems.map((item, index) => (

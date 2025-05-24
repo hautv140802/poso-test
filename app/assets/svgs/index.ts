@@ -28,6 +28,8 @@ import playStoreFill from "./play-store-fill.svg";
 import appleBrand from "./apple-brand.svg";
 import arrowCountry from "./arrow-country.png";
 import arrowRound from "./arrow-round.svg";
+import arrowRightBlue from "./arrow-right-blue.svg";
+import doubleArrowRight from "./double-arrow-right.svg";
 const svgs = {
   sale,
   phoneRounded,
@@ -59,6 +61,8 @@ const svgs = {
   appleBrand,
   arrowCountry,
   arrowRound,
+  arrowRightBlue,
+  doubleArrowRight,
 };
 
 export default svgs;

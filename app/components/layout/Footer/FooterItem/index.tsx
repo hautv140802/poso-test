@@ -12,7 +12,7 @@ const FooterItem = (props: IFooterItemProps) => {
   return (
     <p
       className={clsx(
-        "text-[16px] leading-[24px] font-normal text-text_secondary cursor-pointer",
+        "text-[16px] leading-[28px] font-normal text-text_secondary cursor-pointer",
         labelClassName
       )}
     >
