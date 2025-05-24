@@ -4,7 +4,7 @@ import clsx from "clsx";
 import Image from "next/image";
 
 interface IProductCardProps {
-  type?: "Banner" | "List";
+  type?: "Banner" | "List" | "Cart";
 }
 
 const ProductCard = (props: IProductCardProps) => {
@@ -12,6 +12,7 @@ const ProductCard = (props: IProductCardProps) => {
   const variantSize = {
     Banner: "w-[252.8px] h-[495.8px]",
     List: "w-[261.25px] h-[504.25px]",
+    Cart: "w-[214px] h-[457px]",
   };
   return (
     <div

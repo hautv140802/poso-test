@@ -58,10 +58,10 @@ const Footer = () => {
           <div className="flex flex-col gap-[12px]">
             <FooterItem
               label={
-                <div className="flex items-center gap-[4px]">
-                  <div className="border-b-[1.5px] border-text_primary w-[16px] translate-y-[4px]" />{" "}
+                <span className="flex items-center gap-[4px]">
+                  <span className="border-b-[1.5px] border-text_primary w-[16px] translate-y-[4px]" />{" "}
                   Privacy policy
-                </div>
+                </span>
               }
               labelClassName="!text-text_primary !font-semibold !text-[16px] !leading-[28px]"
             />

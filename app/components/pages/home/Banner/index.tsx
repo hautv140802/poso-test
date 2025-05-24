@@ -1,5 +1,4 @@
 import images from "@/app/assets/images";
-import ProductCard from "@/app/components/common/ProductCard";
 import SwiperProduct from "@/app/components/pages/home/SwiperProduct";
 import Image from "next/image";
 

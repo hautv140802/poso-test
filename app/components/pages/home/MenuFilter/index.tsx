@@ -4,7 +4,7 @@ import SectionFilter, {
   ISectionFilterProps,
 } from "@/app/components/pages/home/SectionFilter";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 const dataFilters: ISectionFilterProps[] = [
   {
@@ -92,22 +92,22 @@ const dataFilters: ISectionFilterProps[] = [
       {
         title: "2021",
         amount: 24,
-        value: 2021,
+        value: "2021",
       },
       {
         title: "2020",
         amount: 24,
-        value: 2020,
+        value: "2020",
       },
       {
         title: "2019",
         amount: 24,
-        value: 2019,
+        value: "2019",
       },
       {
         title: "2018",
         amount: 24,
-        value: 2018,
+        value: "2018",
       },
     ],
   },
