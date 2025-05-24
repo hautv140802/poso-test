@@ -23,6 +23,7 @@ const config: Config = {
         brand_100: "#CDE4FE",
         text_secondary: "#637381",
         brand_600: "#025FCA",
+        brand_800: "#013065",
       },
       backgroundImage: {
         "custom-gradient":
@@ -32,6 +33,7 @@ const config: Config = {
       boxShadow: {
         "card-1": "0px 12px 24px -4px rgba(145, 158, 171, 0.12)",
         "card-2": "0px 0px 2px 0px rgba(145, 158, 171, 0.20)",
+        "custom-soft": "0px 8px 16px 0px #919EAB29",
       },
     },
   },

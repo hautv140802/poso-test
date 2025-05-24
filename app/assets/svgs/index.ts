@@ -18,6 +18,16 @@ import check from "./check.svg";
 import endIcon from "./end-icon.svg";
 import filter from "./filter.svg";
 import arrowUp from "./arrow-up.svg";
+import money from "./money.svg";
+import sp_promotion from "./support_promotion.svg";
+import delivery_promotion from "./delivery_promotion.svg";
+import package_promotion from "./package.svg";
+import map from "./map.svg";
+import arrow from "./arrow.svg";
+import playStoreFill from "./play-store-fill.svg";
+import appleBrand from "./apple-brand.svg";
+import arrowCountry from "./arrow-country.png";
+import arrowRound from "./arrow-round.svg";
 const svgs = {
   sale,
   phoneRounded,
@@ -39,6 +49,16 @@ const svgs = {
   endIcon,
   filter,
   arrowUp,
+  money,
+  sp_promotion,
+  delivery_promotion,
+  package_promotion,
+  map,
+  arrow,
+  playStoreFill,
+  appleBrand,
+  arrowCountry,
+  arrowRound,
 };
 
 export default svgs;

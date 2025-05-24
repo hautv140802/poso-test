@@ -4,6 +4,8 @@ import "./globals.css";
 import TopHeader from "@/app/components/layout/TopHeader";
 import Header from "@/app/components/layout/Header";
 import Categories from "@/app/components/layout/Categories";
+import StoreSystem from "@/app/components/layout/StoreSystem";
+import Footer from "@/app/components/layout/Footer";
 
 const epilogue = localFont({
   src: [
@@ -57,6 +59,9 @@ export default function RootLayout({
         <div className="bg-grey_200 max-w-[1920px] px-[240px] pt-[24px] w-full mx-auto">
           {children}
         </div>
+
+        <StoreSystem />
+        <Footer />
       </body>
     </html>
   );
