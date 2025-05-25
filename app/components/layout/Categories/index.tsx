@@ -33,7 +33,7 @@ const Categories = () => {
             {menuItems.map((item, index) => (
               <li
                 key={index}
-                className="font-medium text-[16px] leading-[24px] text-text_primary cursor-pointer"
+                className="font-medium text-[16px] leading-[24px] text-text_primary cursor-pointer hover:underline underline-offset-2 hover:text-brand_600 duration-300 transition-all"
               >
                 {item}
               </li>
