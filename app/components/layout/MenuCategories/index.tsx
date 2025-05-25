@@ -18,8 +18,8 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 }
-
 `;
+
 const MenuCategories = () => {
   return (
     <>
@@ -37,7 +37,7 @@ const MenuCategories = () => {
         }}
         rootClassName="menu-categories"
       >
-        <button className="flex items-center gap-[8px] p-[12px_16px] bg-[#0155C6] rounded-[8px] text-white font-bold text-[16px]">
+        <button className="flex items-center gap-[8px] p-[10px_12px] 3xl:p-[12px_16px] bg-[#0155C6] rounded-[8px] text-white font-bold 3xl:font-semibold 3xl:text-[14px] text-[16px]">
           <Image src={svgs.menu} width={18} height={18} alt="menu" />
           <span className="text-inherit translate-y-[0.5px]">
             Danh mục sản phẩm

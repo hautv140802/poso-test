@@ -110,7 +110,7 @@ const Footer = () => {
               </div>
             </button>
           </div>
-          <div className="flex items-center gap-[8px] justify-end cursor-pointer">
+          <div className="hidden 3xl:flex items-center gap-[8px] justify-end cursor-pointer">
             <Image
               src={images.countryVN}
               width={36}
@@ -129,29 +129,41 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-[32px] 3xl:hidden">
-        <h1 className="text-[20px] leading-[24px] font-semibold text-brand_800">
-          Viet Hung Auto Production Trading Joint Stock Company
-        </h1>
-        <div className="flex flex-col gap-[4px]">
-          <FooterItem label="Tax code: " title="0305094228" />
-          <FooterItem
-            label="Address: "
-            title="13 Nghia Thuc, Ward 05, District 5, Ho Chi Minh City, Viet Nam."
-          />
-          <FooterItem label="Phone number: " title="0283 760 7607" />
-          <FooterItem
-            label="Opening hour: "
-            title="9:00 - 22:00 from Mon - Fri"
+
+      <div className="flex 3xl:hidden w-full justify-between items-start">
+        <div className="flex flex-col gap-[32px] 3xl:hidden pb-[24px]">
+          <h1 className="text-[20px] leading-[24px] font-semibold text-brand_800">
+            Viet Hung Auto Production Trading Joint Stock Company
+          </h1>
+          <div className="flex flex-col gap-[4px]">
+            <FooterItem label="Tax code: " title="0305094228" />
+            <FooterItem
+              label="Address: "
+              title="13 Nghia Thuc, Ward 05, District 5, Ho Chi Minh City, Viet Nam."
+            />
+            <FooterItem label="Phone number: " title="0283 760 7607" />
+            <FooterItem
+              label="Opening hour: "
+              title="9:00 - 22:00 from Mon - Fri"
+            />
+          </div>
+          <Image
+            src={images.boCongThuong}
+            width={200}
+            height={75.67}
+            alt="bo cong thuong"
           />
         </div>
-        <Image
-          src={images.boCongThuong}
-          width={200}
-          height={75.67}
-          alt="bo cong thuong"
-        />
+
+        <div className="flex items-center gap-[8px] justify-end cursor-pointer">
+          <Image src={images.countryVN} width={36} height={36} alt="country" />
+          <p className="font-medium text-[20px] leading-[16px] text-text_primary">
+            VI
+          </p>
+          <Image src={svgs.arrowCountry} width={9.33} height={4} alt="arrow" />
+        </div>
       </div>
+
       <ScrollTop />
     </div>
   );
