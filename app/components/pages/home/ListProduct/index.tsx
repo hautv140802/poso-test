@@ -158,11 +158,11 @@ const ListProduct = () => {
           <span className="font-semibold text-[20px] text-text_primary leading-[28px] hidden 3xl:block">
             Danh sách sản phẩm
           </span>
-          <div className="flex items-center gap-[24px] 3xl:justify-between w-full">
+          <div className="flex items-center gap-[24px] 3xl:justify-between 3xl:w-fit w-full">
             <span className="font-medium text-[16px] text-text_primary hidden 3xl:block">
               Sắp xếp theo
             </span>
-            <div className="flex items-center 3xl:justify-between gap-[12px] w-full">
+            <div className="flex items-center 3xl:justify-between gap-[12px] 3xl:w-fit w-full">
               {menuQuickFilters.map((item, index) => (
                 <ButtonComponent
                   active={item === selectedQuickFilter}
